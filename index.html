@@ -93,12 +93,19 @@
 
 <section id="gallery" class="gallery-sec">
   <h2>Gallery</h2>
-  <div class="gallery">
-    <img src="images/headshot.jpg" alt="LeAnne Weber in a navy off-shoulder dress" loading="lazy">
-    <img src="images/stage.jpg" alt="LeAnne Weber on stage in a Victorian black costume" loading="lazy">
-    <img src="images/smile.jpg" alt="LeAnne Weber smiling" loading="lazy">
-    <img src="images/red-coat.jpg" alt="LeAnne Weber in a red coat in the snow" loading="lazy">
-    <img src="images/portrait.jpg" alt="Portrait of LeAnne Weber" loading="lazy">
+  <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Photo gallery" tabindex="0">
+    <button class="car-btn prev" type="button" aria-label="Previous photo">&#8249;</button>
+    <div class="car-track">
+      <figure class="slide"><img src="images/stained-glass.jpg" alt="LeAnne Weber twirling in a dress before a stained-glass window"></figure>
+      <figure class="slide"><img src="images/red-coat.jpg" alt="LeAnne Weber in a red coat in the snow" loading="lazy"></figure>
+      <figure class="slide"><img src="images/smile.jpg" alt="LeAnne Weber smiling" loading="lazy"></figure>
+    </div>
+    <button class="car-btn next" type="button" aria-label="Next photo">&#8250;</button>
+    <div class="car-dots" role="group" aria-label="Choose photo"></div>
+    <p class="sr-only" aria-live="polite"></p>
+  </div>
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged photo" hidden>
+    <button class="lb-close" type="button" aria-label="Close">&times;</button><img alt="">
   </div>
 </section>
 
@@ -110,5 +117,6 @@
 </section>
 
 <footer>© 2026 LeAnne Weber</footer>
+<script src="gallery.js" defer></script>
 </body>
 </html>
