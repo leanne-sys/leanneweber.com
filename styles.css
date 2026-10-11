@@ -1,0 +1,54 @@
+:root{--ink:#14110f;--ink2:#1d1916;--ivory:#f4ede1;--gold:#c9a96e;--muted:#9a8f80;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Inter",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--ivory);font:300 17px/1.7 var(--sans)}
+a{color:inherit}img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0}
+h2{font-size:clamp(2.2rem,5vw,3.2rem);text-align:center;margin-bottom:2.2rem;letter-spacing:.02em}
+h2::after{content:"";display:block;width:48px;height:1px;background:var(--gold);margin:1rem auto 0}
+h3{font-size:1.5rem;color:var(--gold);margin-bottom:.8rem;letter-spacing:.03em}
+.nav{position:fixed;inset:0 0 auto;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 5vw;background:rgba(20,17,15,.85);backdrop-filter:blur(8px);z-index:10}
+.mark{font-family:var(--serif);font-size:1.35rem;text-decoration:none;letter-spacing:.05em}
+.nav nav a{margin-left:1.8rem;text-decoration:none;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:#d8cfc0}
+.nav nav a:hover{color:var(--gold)}
+.hero{min-height:min(100vh,860px);display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:4vw;padding:7rem 7vw 4rem}
+.eyebrow{text-transform:uppercase;letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin:0 0 1rem}
+.hero h1{font-size:clamp(4rem,10vw,8.5rem);line-height:.92;font-weight:400}
+.lede{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:#d8cfc0;margin:1.5rem 0 2.2rem}
+.hero-img img{width:100%;max-height:min(82vh,720px);object-fit:cover;object-position:center 20%;border:1px solid rgba(201,169,110,.35);padding:10px}
+.actions{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.85rem 1.6rem;border:1px solid var(--gold);background:var(--gold);color:var(--ink);text-decoration:none;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;transition:.2s}
+.btn:hover{background:transparent;color:var(--gold)}
+.btn.ghost{background:transparent;color:var(--gold)}.btn.ghost:hover{background:var(--gold);color:var(--ink)}
+.btn.dark{color:var(--ink);border-color:var(--ink)}.btn.dark:hover{background:var(--ink);color:var(--ivory)}
+section{padding:6rem 7vw}
+.wrap{max-width:1100px;margin:auto}.narrow{max-width:760px}
+#about p{font-size:1.08rem}
+#credits{background:var(--ivory);color:var(--ink);max-width:none}
+#credits>*{max-width:1000px;margin-left:auto;margin-right:auto}
+#credits h3{color:#7a5c2e}
+.credit-group{margin-bottom:2.6rem}
+table{width:100%;border-collapse:collapse;font-size:.98rem}
+td{padding:.75rem .8rem .75rem 0;border-bottom:1px solid #ddd2bf;vertical-align:top}
+td:first-child{width:36%;font-family:var(--serif);font-size:1.2rem}td:nth-child(2){width:30%}td:nth-child(3){color:#5d554b}
+.note{font-size:.85rem;font-style:italic;color:#6b6257}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:2.6rem}
+ul{padding-left:1.1rem;margin:.4rem 0}li{margin:.3rem 0}
+.skills{line-height:2}
+.center{text-align:center}
+.gallery-sec{padding-left:4vw;padding-right:4vw}
+.gallery{columns:3 280px;column-gap:14px;max-width:1300px;margin:auto}
+.gallery img{width:100%;margin-bottom:14px;break-inside:avoid;filter:saturate(.95);transition:.3s}
+.gallery img:hover{filter:none;transform:scale(1.01)}
+.email{font-family:var(--serif);font-size:clamp(1.6rem,4vw,2.4rem);color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(201,169,110,.4)}
+.muted{color:var(--muted);letter-spacing:.2em;text-transform:uppercase;font-size:.8rem}
+footer{text-align:center;padding:2.5rem;color:var(--muted);font-size:.8rem;border-top:1px solid #2a2420}
+@media(max-width:820px){
+ .nav nav{display:none}
+ .hero{grid-template-columns:1fr;padding-top:5.5rem;gap:2rem;text-align:center}
+ .hero-img{order:-1;margin:0}.hero-img img{max-height:min(60vh,520px)}
+ .actions{justify-content:center}
+ section{padding:4rem 6vw}
+ .cols{grid-template-columns:1fr;gap:1.5rem}
+ table,tbody,tr,td{display:block;width:100%!important}
+ tr{padding:.8rem 0;border-bottom:1px solid #ddd2bf}td{border:0;padding:.1rem 0}
+}
