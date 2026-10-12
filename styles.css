@@ -69,3 +69,10 @@ footer{text-align:center;padding:2.5rem;color:var(--muted);font-size:.8rem;borde
 @media (max-width:640px){.car-track{height:min(58vh,420px)}.slide img{max-width:76vw}.car-btn{width:40px;height:40px;font-size:1.5rem}}
 @media (prefers-reduced-motion:reduce){.slide{transition:none}}
 .slide.prev-s,.slide.next-s{opacity:.45;z-index:2;pointer-events:auto;cursor:pointer}
+
+.socials{margin:1.1rem 0 .5rem}
+.social{display:inline-flex;align-items:center;justify-content:center;color:var(--gold);text-decoration:none;transition:color .25s ease}
+.social:hover,.social:focus-visible{color:var(--ivory)}
+.social svg{width:22px;height:22px;display:block}
+footer .socials{margin:0 0 .85rem}
+footer p{margin:.2rem 0}
